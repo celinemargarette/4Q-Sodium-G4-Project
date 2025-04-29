@@ -8,10 +8,9 @@
 body {
     background-color: #f9eae8;
     color: #2d4b9a;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 .container {
@@ -21,11 +20,9 @@ body {
     text-align: center;
     position: relative;
     z-index: 2;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .game-title {
@@ -47,7 +44,7 @@ body {
 .game-subtitle {
     font-size: 1.8rem;
     color: #a387c8;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     font-weight: bold;
 }
@@ -245,21 +242,22 @@ body {
 
 .game-container {
     max-width: 800px;
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     display: none;
     position: relative;
-    overflow: hidden;
-    margin: auto;
+    margin: 20px auto;
     width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .welcome-message {
     font-size: 1.8rem;
     color: #e94e97;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
     text-shadow: 1px 1px 0 rgba(233, 78, 151, 0.2);
 }
@@ -267,12 +265,12 @@ body {
 .pics-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .pic-box {
-    height: 150px;
+    height: 120px;
     background-color: #f0f4ff;
     border-radius: 15px;
     display: flex;
@@ -297,20 +295,20 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
 }
 
 .letter-box {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: #f0f4ff;
     border: 3px solid #d1dfff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #2d4b9a;
     text-transform: uppercase;
@@ -318,16 +316,19 @@ body {
 
 .answer-container {
     margin-top: 15px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .answer-input {
     width: 100%;
-    padding: 15px;
+    max-width: 400px;
+    padding: 12px;
     border: 3px solid #d1dfff;
     border-radius: 15px;
     font-size: 1.2rem;
-    margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -344,9 +345,9 @@ body {
 .submit-answer {
     background: linear-gradient(to right, #2d4b9a, #5273c8);
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    padding: 12px 40px;
+    padding: 12px 30px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -354,46 +355,42 @@ body {
     box-shadow: 0 5px 0 #1a3575, 0 10px 15px rgba(45, 75, 154, 0.3);
     font-family: 'Comic Neue', cursive;
     letter-spacing: 1px;
-}
-
-.submit-answer:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 0 #1a3575, 0 12px 17px rgba(45, 75, 154, 0.3);
-}
-
-.submit-answer:active {
-    transform: translateY(2px);
-    box-shadow: 0 3px 0 #1a3575, 0 6px 10px rgba(45, 75, 154, 0.3);
+    width: 100%;
+    max-width: 300px;
 }
 
 .hint-btn {
     background-color: transparent;
     color: #a387c8;
     border: 3px solid #a387c8;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 10px;
     transition: all 0.3s ease;
     font-family: 'Comic Neue', cursive;
+    width: 100%;
+    max-width: 300px;
+}
+
+.submit-answer:hover, .hint-btn:hover {
+    transform: translateY(-3px);
+}
+
+.submit-answer:active, .hint-btn:active {
+    transform: translateY(1px);
 }
 
 .hint-btn:hover {
     background-color: #a387c8;
     color: white;
-    transform: translateY(-2px);
-}
-
-.hint-btn:active {
-    transform: translateY(1px);
 }
 
 .timer-container {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -407,16 +404,17 @@ body {
 }
 
 .progress-container {
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: left;
+    padding-bottom: 10px;
 }
 
 .level-indicator {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
 }
 
 .level-text {
@@ -430,11 +428,10 @@ body {
 }
 
 .progress-bar {
-    height: 15px;
+    height: 12px;
     background-color: #d1dfff;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 10px;
     position: relative;
     border: 2px solid #a387c8;
 }
@@ -449,41 +446,40 @@ body {
 
 .results-container {
     max-width: 600px;
-    padding: 40px;
+    padding: 30px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: none;
     position: relative;
-    overflow: hidden;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .results-container h2 {
     color: #2d4b9a;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .result-message {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #a387c8;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .result-score {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #e94e97;
-    margin: 20px 0;
+    margin: 15px 0;
     text-shadow: 3px 3px 0 rgba(233, 78, 151, 0.2);
 }
 
 .result-stars {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: gold;
     margin: 15px 0;
     letter-spacing: 10px;
@@ -493,13 +489,13 @@ body {
 .play-again-btn {
     background: linear-gradient(to right, #2d4b9a, #5273c8);
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    padding: 15px 50px;
+    padding: 12px 40px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: all 0.3s ease;
     box-shadow: 0 5px 0 #1a3575, 0 10px 15px rgba(45, 75, 154, 0.3);
     font-family: 'Comic Neue', cursive;
@@ -520,6 +516,21 @@ body {
     display: block;
 }
 
+@media (min-width: 768px) {
+    .answer-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .submit-answer, .hint-btn {
+        width: auto;
+    }
+    
+    .hint-btn {
+        margin-left: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .game-title h1 {
         font-size: 3.5rem;
@@ -535,18 +546,14 @@ body {
         margin-bottom: 15px;
     }
     
-    .pics-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     .pic-box {
-        height: 120px;
+        height: 100px;
     }
     
     .letter-box {
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
+        width: 30px;
+        height: 30px;
+        font-size: 1.1rem;
     }
     
     .play-btn {
@@ -569,22 +576,32 @@ body {
         padding: 10px 30px;
     }
     
-    .pics-container {
-        gap: 10px;
-    }
-    
     .pic-box {
-        height: 100px;
+        height: 80px;
     }
     
     .letter-box {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         font-size: 1rem;
     }
     
     .difficulty-btn {
         font-size: 1.5rem;
         padding: 12px 30px;
+    }
+    
+    .welcome-message {
+        font-size: 1.5rem;
+    }
+    
+    .answer-input {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    
+    .submit-answer, .hint-btn {
+        font-size: 1.1rem;
+        padding: 8px 20px;
     }
 }
