@@ -1,9 +1,9 @@
 const gameData = {
     easy: [
         {
-            images: ["images/sun1.jpg", "images/sun2.jpg", "images/sun3.jpg", "images/sun4.jpg"],
-            answer: "SUN",
-            hint: "causes skin cancer"
+            images: ["images/apple1.jpg", "images/apple2.jpg", "images/apple3.jpg", "images/apple4.jpg"],
+            answer: "APPLE",
+            hint: "crim student: ate pa print ate: a4? crim student: apple"
         },
         {
             images: ["images/cute1.jpg", "images/cute2.jpg", "images/cute3.jpg", "images/cute4.jpg"],
@@ -11,26 +11,9 @@ const gameData = {
             hint: "adorable, me, celine"
         },
         {
-            images: ["images/apple1.jpg", "images/apple2.jpg", "images/apple3.jpg", "images/apple4.jpg"],
-            answer: "APPLE",
-            hint: "crim student: ate pa print ate: a4? crim student: apple"
-        },
-        {
-            images: ["images/yogurt1.jpg", "images/yogurt2.jpg", "images/yogurt3.jpg", "images/yogurt4.jpg"],
-            answer: "YOGURT",
-            hint: "me: peaceful  ful: where u going  u: i ain't going anywhere  gurt: yo"
-        },
-        {
-            images: ["images/tree1.jpg", "images/tree2.jpg", "images/tree3.jpg", "images/tree4.jpg"],
-            answer: "TREE",
-            hint: "1 2 "
-        }
-    ],
-    hard: [
-        {
-            images: ["images/corrupt1.jpg", "images/corrupt2.jpg", "images/corrupt3.jpg", "images/corrupt4.jpg"],
-            answer: "CORRUPT",
-            hint: "government"
+            images: ["images/vampire1.jpg", "images/vampire2.jpg", "images/vampire3.jpg", "images/vampire4.jpg"],
+            answer: "VAMPIRE",
+            hint: "sparkly creatures that suck blood"
         },
         {
             images: ["images/pisay1.jpg", "images/pisay2.jpg", "images/pisay3.jpg", "images/pisay4.jpg"],
@@ -38,19 +21,36 @@ const gameData = {
             hint: "Philippine Science High Thou stands above with thy thoughts that lift."
         },
         {
-            images: ["images/hacker1.jpg", "images/hacker2.jpg", "images/hacker3.jpg", "images/hacker4.jpg"],
-            answer: "HACKER",
-            hint: "me after comsi"
+            images: ["images/yogurt1.jpg", "images/yogurt2.jpg", "images/yogurt3.jpg", "images/yogurt4.jpg"],
+            answer: "YOGURT",
+            hint: "me: peaceful  ful: where u going  u: i ain't going anywhere  gurt: yo"
+        }
+    ],
+    hard: [
+        {
+            images: ["images/corrupt1.jpg", "images/corrupt2.jpg", "images/corrupt3.jpg", "images/corrupt4.jpg"],
+            answer: "CORRUPT",
+            hint: "leaderzz governmentt yurr"
+        },
+        {
+            images: ["images/carren1.jpg", "images/carren2.jpg", "images/carren3.jpg", "images/carren4.jpg"],
+            answer: "CARREN",
+            hint: "van't hoff factor, Π = iMRT"
+        },
+        {
+            images: ["images/clifford1.jpg", "images/clifford2.jpg", "images/clifford3.jpg", "images/clifford4.jpg"],
+            answer: "CLIFFORD",
+            hint: "for todeys vidyew"
         },
         {
             images: ["images/jovani1.jpg", "images/jovani2.jpg", "images/jovani3.jpg", "images/jovani4.jpg"],
             answer: "JOVANI",
-            hint: "best teacher"
+            hint: "t distribution"
         },
         {
             images: ["images/kyleenorio1.jpg", "images/kyleenorio2.jpg", "images/kyleenorio3.jpg", "images/kyleenorio4.jpg"],
             answer: "KYLEENORIO",
-            hint: "comsi hacker gcahs hacker"
+            hint: "comsi hacker gcahs hacker perfect aa sir pls"
         }
     ]
 };
