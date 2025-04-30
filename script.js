@@ -196,8 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
             updateTimer();
             if (timeLeft <= 0) {
                 clearInterval(timer);
-                alert("Time's up!");
-                endGame();
+                proceedToNextRound(); 
             }
         }, 1000);
     }
@@ -208,16 +207,20 @@ document.addEventListener('DOMContentLoaded', function () {
         timerEl.textContent = `${min}:${sec < 10 ? '0' : ''}${sec}`;
     }
 
+    function proceedToNextRound() {
+        if (currentLevel < 5) {
+            currentLevel++;
+            loadRound();
+        } else {
+            endGame();
+        }
+    }
+
     function checkAnswer() {
         const userInput = answerInput.value.trim().toUpperCase();
         if (userInput === currentRound.answer.toUpperCase()) {
             score++;
-            if (currentLevel < 5) {
-                currentLevel++;
-                loadRound();
-            } else {
-                endGame();
-            }
+            proceedToNextRound(); 
         } else {
             alert("Mali! Try ulit.");
         }
