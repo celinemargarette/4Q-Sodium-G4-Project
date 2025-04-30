@@ -13,7 +13,7 @@ const gameData = {
         {
             images: ["images/vampire1.jpg", "images/vampire2.jpg", "images/vampire3.jpg", "images/vampire4.jpg"],
             answer: "VAMPIRE",
-            hint: "sparkly creatures that suck blood"
+            hint: "what hafen bela whhy u crying bela vamfyre right"
         },
         {
             images: ["images/pisay1.jpg", "images/pisay2.jpg", "images/pisay3.jpg", "images/pisay4.jpg"],
