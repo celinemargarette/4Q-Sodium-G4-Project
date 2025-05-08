@@ -48,12 +48,12 @@ const gameData = {
             hint: "van't hoff factor, Π = iMRT"
         },
         {
-            images: ["images/clifford1.jpg", "images/clifford2.jpg", "images/clifford3.jpg", "images/clifford4.jpg"],
+            images: ["images/sirford1.jpg", "images/sirford2.jpg", "images/sirford3.jpg", "images/sirford4.jpg"],
             answer: "CLIFFORD",
             hint: "for todeys vidyew"
         },
         {
-            images: ["images/jovanni1.jpg", "images/jovanni2.jpg", "images/jovanni3.jpg", "images/jovanni4.jpg"],
+            images: ["images/jovani1.jpg", "images/jovani2.jpg", "images/jovani3.jpg", "images/jovani4.jpg"],
             answer: "JOVANNI",
             hint: "t distribution"
         },
