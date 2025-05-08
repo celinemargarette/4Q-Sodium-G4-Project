@@ -59,7 +59,7 @@ const gameData = {
         },
         {
             images: ["images/alex1.jpg", "images/alex2.jpg", "images/alex3.jpg", "images/alex4.jpg"],
-            answer: "ALEX",
+            answer: "ALEXANDERCANADA",
             hint: "baho"
         },
         {
