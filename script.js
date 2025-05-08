@@ -24,13 +24,23 @@ const gameData = {
             images: ["images/yogurt1.jpg", "images/yogurt2.jpg", "images/yogurt3.jpg", "images/yogurt4.jpg"],
             answer: "YOGURT",
             hint: "me: peaceful  ful: where u going  u: i ain't going anywhere  gurt: yo"
-        }
-    ],
-    hard: [
+        },
+        {
+            images: ["images/cherry1.jpg", "images/cherry2.jpg", "images/cherry3.jpg", "images/cherry4.jpg"],
+            answer: "CHERRY",
+            hint: "adviser ng nine sojum"
+        },
         {
             images: ["images/corrupt1.jpg", "images/corrupt2.jpg", "images/corrupt3.jpg", "images/corrupt4.jpg"],
             answer: "CORRUPT",
             hint: "leaderzz governmentt yurr"
+        }
+    ],
+    hard: [
+        {
+            images: ["images/jimmy1.jpg", "images/jimmy2.jpg", "images/jimmy3.jpg", "images/jimmy4.jpg"],
+            answer: "JIMMY",
+            hint: "comsi teacheeer"
         },
         {
             images: ["images/carren1.jpg", "images/carren2.jpg", "images/carren3.jpg", "images/carren4.jpg"],
@@ -38,14 +48,19 @@ const gameData = {
             hint: "van't hoff factor, Π = iMRT"
         },
         {
-            images: ["images/sirford1.jpg", "images/sirford2.jpg", "images/sirford3.jpg", "images/sirford4.jpg"],
+            images: ["images/clifford1.jpg", "images/clifford2.jpg", "images/clifford3.jpg", "images/clifford4.jpg"],
             answer: "CLIFFORD",
             hint: "for todeys vidyew"
         },
         {
-            images: ["images/jovani1.jpg", "images/jovani2.jpg", "images/jovani3.jpg", "images/jovani4.jpg"],
-            answer: "JOVANI",
+            images: ["images/jovanni1.jpg", "images/jovanni2.jpg", "images/jovanni3.jpg", "images/jovanni4.jpg"],
+            answer: "JOVANNI",
             hint: "t distribution"
+        },
+        {
+            images: ["images/alex1.jpg", "images/alex2.jpg", "images/alex3.jpg", "images/alex4.jpg"],
+            answer: "ALEX",
+            hint: "baho"
         },
         {
             images: ["images/kyleenorio1.jpg", "images/kyleenorio2.jpg", "images/kyleenorio3.jpg", "images/kyleenorio4.jpg"],
