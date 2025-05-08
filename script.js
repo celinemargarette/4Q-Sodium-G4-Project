@@ -66,6 +66,11 @@ const gameData = {
             images: ["images/kyleenorio1.jpg", "images/kyleenorio2.jpg", "images/kyleenorio3.jpg", "images/kyleenorio4.jpg"],
             answer: "KYLEENORIO",
             hint: "comsi hacker gcahs hacker perfect aa sir pls"
+        },
+        {
+            images: ["images/placeholder1.jpg", "images/placeholder2.jpg", "images/placeholder3.jpg", "images/placeholder4.jpg"],
+            answer: "EXAMPLE",
+            hint: "This is a placeholder for the 7th hard level"
         }
     ]
 };
@@ -196,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         currentLevelEl.textContent = currentLevel;
         currentScoreEl.textContent = score;
-        progressBar.style.width = ((currentLevel - 1) / 5) * 100 + "%";
+        progressBar.style.width = ((currentLevel - 1) / 7) * 100 + "%";
 
         startTimer();
     }
@@ -223,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function proceedToNextRound() {
-        if (currentLevel < 5) {
+        if (currentLevel < 7) {
             currentLevel++;
             loadRound();
         } else {
@@ -245,8 +250,10 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInterval(timer);
         gameContainer.style.display = 'none';
         resultsContainer.style.display = 'block';
-        resultScore.textContent = `${score}/5`;
-        resultStars.textContent = "★".repeat(score >= 4 ? 3 : score >= 2 ? 2 : 1);
+        resultScore.textContent = `${score}/7`;
+        
+        const stars = Math.floor((score / 7) * 3);
+        resultStars.textContent = "★".repeat(stars) + "☆".repeat(3 - stars);
     }
 
     init();
