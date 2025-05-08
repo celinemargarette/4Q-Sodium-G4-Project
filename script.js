@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (e.key === 'Enter') {
                 checkAnswer();
             }
-        });
+        };
 
         hintBtn.onclick = () => {
             alert(currentRound.hint);
@@ -248,7 +248,8 @@ document.addEventListener('DOMContentLoaded', function () {
         resultsContainer.style.display = 'block';
         const maxLevel = currentDifficulty === 'easy' ? 7 : 6;
         resultScore.textContent = `${score}/${maxLevel}`;
-        resultStars.textContent = "★".repeat(Math.floor(score / (maxLevel / 3)));
+        const starCount = Math.floor((score / maxLevel) * 3);
+        resultStars.textContent = "★".repeat(starCount) + "☆".repeat(3 - starCount);
     }
 
     init();
